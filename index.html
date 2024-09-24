@@ -4,66 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAULI Foundation - One Hand of Help, One Hand of Change</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">
-        <h1>MAULI Foundation</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">MAULI Foundation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="hero-content text-center">
       <h2>Magnifying Aspirations for Unified Life Improvement</h2>
       <p>Empowering the underprivileged through philanthropic activities</p>
-      <a href="#about" class="btn">Learn More</a>
+      <a href="#about" class="btn btn-primary">Learn More</a>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About MAULI Foundation</h2>
-    <p>At MAULI Foundation, we are dedicated to bringing positive changes to the lives of the underprivileged through various charitable initiatives. From supporting education to providing basic needs, we are committed to a better future.</p>
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2>About MAULI Foundation</h2>
+      <p>At MAULI Foundation, we are dedicated to bringing positive changes to the lives of the underprivileged through various charitable initiatives. From supporting education to providing basic needs, we are committed to a better future.</p>
+    </div>
   </section>
 
-  <section id="mission">
-    <h2>Our Mission</h2>
-    <p>Our mission is to provide a helping hand to those in need and bring about structural changes in society by empowering marginalized communities.</p>
+  <section id="mission" class="py-5 text-white">
+    <div class="container text-center">
+      <h2>Our Mission</h2>
+      <p>Our mission is to provide a helping hand to those in need and bring about structural changes in society by empowering marginalized communities.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Our Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>Educational Cycle Project</h3>
-        <p>Collecting unused cycles from urban areas and donating them to underprivileged children in remote areas for easier access to education.</p>
-        <div class="project-image"><img src="./images/poster.jpg"></div>
+  <section id="projects" class="py-5">
+    <div class="container text-center">
+      <h2>Our Projects</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="project">
+            <h3>Educational Cycle Project</h3>
+            <p>Collecting unused cycles from urban areas and donating them to underprivileged children in remote areas for easier access to education.</p>
+            <div class="project-image"><img src="./images/poster.jpg" class="img-fluid" alt="Project Image"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <form id="contactForm" class="mx-auto">
+        <div class="form-group">
+          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+      </form>
+    </div>
   </section>
 
-  <footer>
+  <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 MAULI Foundation. All Rights Reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
